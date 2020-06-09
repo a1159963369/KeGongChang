@@ -1,0 +1,73 @@
+ .daohang{
+	 position: absolute;
+	 top: 160px;
+	 left: 370px;
+ }
+ .daohang>div{
+	
+	width: 110px;
+	text-align: center;
+	height: 50px;
+	line-height: 45px;
+ }
+ .redian{
+	 position: absolute;
+	 top: 160px;
+	 left: 169px;
+	 font-weight: bold;
+	 width: 220px;
+	 height: 50px;
+	 line-height: 45px;
+	 font-size: 20px;
+	 text-align: center;
+	 background: #AECA2D;
+	 color: floralwhite;
+ }
+ .daohang>div:hover{
+	background: #AECA2D;
+ }
+ .xiaoqu{
+ 	position: absolute;
+	 top: 142px;
+	 left: 1190px;
+ }
+ .shouye{
+ 	margin-left: 30px;
+ }
+#drop-down {
+      width: 100px;
+      
+    }
+    #drop-down>p {
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align:center;
+    }
+    #drop-down ul {
+    display:none;
+    background-color:white;
+    color: white;
+    list-style-type: none;
+    text-align:center;
+    position: relative;
+    z-index: 3;
+    margin-top: -5px;
+    }
+    #drop-down:hover ul {
+      display: block;
+      font-size: 12px;
+    }
+     #drop-down ul li{
+    height: 30px;
+    line-height: 30px;
+    margin-left: -40px;
+    }
+   .hui{
+	background:#00FFFF;
+	width:100px;
+	text-align: center;
+}
+	.hei{
+	background:#AECA2D;
+	}

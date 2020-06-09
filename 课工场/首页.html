@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/上部.css"/><!--上部-->
+		<link rel="stylesheet" type="text/css" href="css/中部.css"/>
+		<link rel="stylesheet" type="text/css" href="css/导航.css"/>
+		<link rel="stylesheet" href="js/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="css/侧边.css"/>
+		<link rel="stylesheet" type="text/css" href="css/侧边栏二级菜单.css"/>
+		<link rel="stylesheet" type="text/css" href="css/四个小方块.css"/>
+		<style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #FAFAFA;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 108%;
+      height: 56%;
+      
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      
+    }
+    .da{
+    	height:200px;
+    	
+    }
+    .xinwen{
+    	position: absolute;
+    	top: 900px;
+    	left: 130px;
+    	font-size:20px ;
+    }
+	.xinwen>div{
+		margin-left: 35px;
+	}
+	.xiaoxinwen{
+		position: absolute;
+		top:180px;
+		left:568px;	
+	}
+	.xiaoxinwener{
+		position: absolute;
+		top:180px;
+		left: 898px;
+	}
+	.zoujin{
+		position: absolute;
+    	top: 1300px;
+    	left: 130px;
+    	font-size:20px ;
+	}
+	.zoujin>div{
+		margin-left: 35px;
+	}
+	.laonanren{
+		position: absolute;
+		top:226px;
+		left: 240px;
+	}
+	.beidaxiaomen{
+		position: absolute;
+		top:226px;
+		left:474px;
+	}
+	.fangda:hover{
+		transform: scale(1.1);
+		
+	}
+	.jiaoxue{
+		position: absolute;
+		top:380px;
+		left:0px;
+		
+	}
+	.saner{
+		position: absolute;
+		top:65px;
+		left:240px;
+	}
+	.sansan{
+		position: absolute;
+		top:65px;
+		left:490px;
+	}
+	.sansi{
+		position: absolute;
+		top:65px;
+		left:740px;
+	}
+	.sanwu{
+		position: absolute;
+		top:65px;
+		left:1000px;
+	}
+	.kecheng{
+		position: absolute;
+		top:765px;
+		left:30px;
+	}
+	.waikuang{
+		width: 1400px;
+		height: 370px;
+		
+		position: relative;
+		top:600px;
+		left:0px;
+	}
+	.shangbian{
+		width: 1000px;
+		height: 180px;
+		
+		position: absolute;
+		top:2px;
+		left:250px;
+		margin-top:10px;
+		margin-left: 30px;
+	}
+	.xiabian{
+		width: 1100px;
+		height: 180px;
+		
+		position: absolute;
+		top:206px;
+		left:250px;
+		margin-top:10px;
+		margin-left: 30px;
+	}
+	.waikuang>div>img{
+		margin-left: 10px;
+	}
+	.last{
+		position: absolute;
+		top: 1200px;
+		
+		margin-top:200px;
+		background-color: #A9A9A9;
+		width: 85%;
+		height: 400px;
+	}
+	.last a{
+		text-decoration: none;
+		color:dimgray ;
+		font-size: 10px;
+	}
+	.last a:hover{
+		
+		color:mediumseagreen ;
+	}
+	.xiazai{
+		float: left;
+		width: 120px;
+		height: 120px;
+		margin-left: 50px;
+		margin-top: 100px;
+	}
+	.guanzhu{
+		float: left;
+		width: 120px;
+		height:120px;
+		margin-left: 20px;
+		margin-top: 100px;
+	}
+	.guanyu{
+		float: left;
+		margin-left: 80px;
+		margin-top: 100px;
+	}
+	.youzhi{
+		float: left;
+		margin-left: 80px;
+		margin-top: 100px;
+	}
+	.fuwu{
+		float: left;
+		margin-left: 80px;
+		margin-top: 100px;
+	}
+	.youqing{
+		float: left;
+		margin-left: 80px;
+		margin-top: 100px;
+	}
+	.sifanghe{
+		position: relative;
+		top: 5px;
+		left: 395px;
+	}
+	.shipin{
+		margin-left: 20px;
+	}
+	.guding{
+		position: fixed;
+		top: 200px;
+		left: 1424px;
+		z-index: 9999999;
+	}
+  </style>
+	</head>
+	<body>
+		<div class="da">
+			
+			<ul>
+				<li class="yi">|<a href="#">&nbsp;在线课程-Ekgc.cn&nbsp;</a>|</li>
+				<li class="er"><img src="img/1.PNG" ></li>
+				<li class="san"><a href="#">手机网</a></li>
+				<li class="si"><a href="#">线下服务中心</a></li>
+			</ul>
+			
+			<ul>
+				<li class="logo"><img src="img/logo.png" ></li>
+				<li class="dianhua"><img src="img/电话.PNG" ></li>
+			</ul>
+			
+			
+			<div class="redian"><a href="#">热点关注</a></div>
+		<div class="daohang">
+			<div class="shouye"><a href="#">首页</a></div>
+			<div id="drop-down"><li><a href="#">课工场学院</a>
+						<ul>
+							<li class="hui"><a href="http://127.0.0.1:8848/%E8%AF%BE%E5%B7%A5%E5%9C%BA/%E5%90%B4%E6%96%87%E6%B3%BD.html">人工智能</a></li>
+							<li class="hei"><a href="#">大数据</a></li>
+							<li class="hui"><a href="#">云计算</a></li>
+							<li class="hei"><a href="#">互联网构架</a></li>
+							<li class="hui"><a href="#">JAVA全栈</a></li>
+							<li class="hei"><a href="#">互联网软件</a></li>
+							<li class="hui"><a href="#">创意设计</a></li>
+							<li class="hei"><a href="#">互联网营销</a></li>
+						</ul>
+				</li>		
+			</div>
+			<div><a href="http://127.0.0.1:8848/%E8%AF%BE%E5%B7%A5%E5%9C%BA/%E6%A5%BC%E5%BF%97%E8%B6%85.html">大学教材</a></div>
+			<div><a href="http://127.0.0.1:8848/%E8%AF%BE%E5%B7%A5%E5%9C%BA/%E8%B0%88%E9%91%AB%E5%98%89.html">师资力量</a></div>
+			<div id="drop-down"><li><a href="#">高薪就业</a>
+				<ul>
+					<li class="hui"><a href="http://127.0.0.1:8848/%E8%AF%BE%E5%B7%A5%E5%9C%BA/%E5%91%A8%E6%B5%A9.html">名企合作</a></li>
+					<li class="hei"><a href="http://127.0.0.1:8848/%E8%AF%BE%E5%B7%A5%E5%9C%BA/%E5%91%A8%E6%B5%A9.html">在线课程</a></li>
+					<li class="hui"><a href="#">学员就业薪资</a></li>
+					<li class="hei"><a href="#">人保合作</a></li>
+				</ul>
+				</li>
+			
+			
+			</div>
+			<div><a href="http://127.0.0.1:8848/%E8%AF%BE%E5%B7%A5%E5%9C%BA/%E5%91%A8%E6%B5%A9.html">在线课程</a></div>
+			<div><a href="http://127.0.0.1:8848/%E8%AF%BE%E5%B7%A5%E5%9C%BA/%E8%8B%8F%E5%BB%BA%E5%BC%BA.html">关于我们</a></div>
+		</div>
+			<a href="#"><img class="xiaoqu" src="img/学区分布.PNG"/></a>
+	</div>	
+		<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="#"><img src="img/1553737682113700.png"/></a></div>
+      <div class="swiper-slide"><a href="#"><img src="img/1563520059636068.png"/></a></div>
+      <div class="swiper-slide"><a href="#"><img src="img/1566537603462024.jpg"/></a></div>
+      <div class="swiper-slide"><a href="#"><img src="img/1568018822718837.jpg"/></a><</div>
+      <div class="swiper-slide"><a href="#"><img src="img/1568171422420075.jpg"/></a></div>
+      <div class="swiper-slide"><a href="#"><img src="img/1570687251728496.jpg"/></a></div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        
+      },
+    });
+  </script>
+  		<div class="cebian">
+  			<div>
+  				<ul class="diyi">
+  					<li><h3>人工智能学院</h3>
+					<ul class="diyikuai">
+						<li class="yixiao"><a href="http://127.0.0.1:8848/%E8%AF%BE%E5%B7%A5%E5%9C%BA/%E5%90%B4%E6%96%87%E6%B3%BD.html"><img src="img/124.PNG" ></a></li>
+						<li class="erxiao"><a href="#"><img src="img/123.PNG" ></a></li>
+						<li class="sanxiao"><a href="#"><img src="img/126.PNG"></a></li>
+						<li class="sixiao"><a href="#"><img src="img/125.PNG"></a></li>
+					</ul>
+					
+					</li>
+  					<li>ID Deeplearning 算法优化</li>
+  				</ul>
+  			</div>
+  			<div>
+  				<ul>
+  					<li><h3>大数据学院</h3></li>
+  					<li>Java&nbsp;Hadoop&nbsp;SparK&nbsp;KaFKa&nbsp;</li>
+  				</ul>
+  			</div>
+  			<div>
+  				<ul>
+  					<li><h3>区块链学院</h3></li>
+  					<li>Java&nbsp;Hadoop&nbsp;SparK</li>
+  				</ul>
+  			</div>
+  			<div>
+  				<ul>
+  					<li><h3>云计算学院</h3></li>
+  					<li>Java&nbsp;Hadoop&nbsp;SparK</li>
+  				</ul>
+  			</div>
+  			<div>
+  				<ul>
+  					<li><h3>互联网软件学院</h3></li>
+  					<li>Java&nbsp;Hadoop&nbsp;SparK</li>
+  				</ul>
+  			</div>
+  			<div>
+  				<ul>
+  					<li><h3>创意设计学院</h3></li>
+  					<li>Java&nbsp;Hadoop&nbsp;SparK</li>
+  				</ul>
+  			</div>
+  			<div>
+  				<ul>
+  					<li><h3>互联网营销学院</h3></li>
+  					<li>Java&nbsp;Hadoop&nbsp;SparK</li>
+  				</ul>
+  			</div>
+  			<div>
+  				<ul>
+  					<li><h3>代码学院</h3></li>
+  					<li>Java&nbsp;Hadoop&nbsp;SparK</li>
+  				</ul>
+  			</div>
+  		</div>
+		
+		<div class="sifanghe">
+			<div class="youyi"><a href="#"><img src="img/企.PNG" ></a></div>
+			<div class="youer"><a href="#"><img src="img/证.PNG" ></a></div>
+			<div class="yousan"><a href="#"><img src="img/校.PNG" ></a></div>
+			<div class="yousi"><a href="#"><img src="img/保.PNG" ></a></div>
+		</div>
+		<!--下方开始-->
+		<div class="xinwen">
+			<ul>
+				<li>课工厂新闻</li>
+			</ul>
+			<div>
+				<img class="fangda" src="img/yi.PNG"/>
+			</div>
+			<div>
+				<img class="fangda" src="img/new_person_01.jpg"/>
+			</div>
+			<div>
+				<img class="fangda" src="img/new_top_media.jpg"/>
+			</div>
+			<div>
+				<img class="fangda" src="img/new_top_kgc.jpg"/>
+			</div>
+			<ul class="xiaoxinwen">
+				<li><a href="#">媒体报道</a></li>
+				<li><a href="#">[媒体] 15名学员入职阿里，课工..</a></li>
+				<li><a href="#">[媒体] 课工场荣获决胜网 2018年..</a></li>
+				<li><a href="#">[媒体] 第43届ACM-ICPC亚洲区..</a></li>
+				<li><a href="#">[媒体]第43届ACM-ICPC亚洲..</a></li>
+			</ul>
+			
+			<ul class="xiaoxinwener">
+				<li><a href="#">媒体报道</a></li>
+				<li><a href="#">[媒体] 15名学员入职阿里，课工..</a></li>
+				<li><a href="#">[媒体] 课工场荣获决胜网 2018年..</a></li>
+				<li><a href="#">[媒体]第43届ACM-ICPC亚洲区..</a></li>
+				<li><a href="#">[媒体]第43届ACM-ICPC亚洲..</a></li>
+			</ul>
+			
+		</div>
+		
+		<div class="zoujin">
+			<ul>
+				<li>走进课工厂</li>
+			</ul>
+			<div>
+				<img class="fangda" src="img/2222222222222.PNG"/>
+			</div>
+			<div>
+				<img class="fangda" src="img/r2_zjkgc_03.jpg"/>
+			</div>
+			<div class="laonanren">
+				<img class="fangda"  src="img/r2_zjkgc_07.jpg"/>
+			</div>
+			<div class="beidaxiaomen">
+				<img class="fangda" src="img/r2_zjkgc_09.jpg">
+			</div>
+			<a href="#"><img class="shipin" width="520px" height="320px" src="img/视频.PNG" ></a>
+			<div class="jiaoxue">
+				<ul>
+				<li>教学与研发</li>
+				</ul>
+				<div class="sanyi">
+					<img class="fangda" src="img/jiaoxue.PNG"/>
+				</div>
+				<div class="saner">
+					<img class="fangda"  src="img/r3_jxyf_03.jpg">
+				</div>
+				<div class="sansan">
+					<img class="fangda" src="img/r3_jxyf_05.jpg">
+				</div>
+				<div class="sansi">
+					<img class="fangda"  src="img/r3_jxyf_07.jpg">
+				</div>
+				<div class="sanwu">
+					<img class="fangda" src="img/r3_jxyf_09.jpg">
+				</div>
+			</div>
+			
+				<ul class="kecheng">
+				<li>课程体系</li>
+				</ul>
+			<div class="waikuang">
+				<img class="fangda" height="370px" src="img/八大课程.PNG"/>
+				<div class="shangbian">
+					<img class="fangda" src="img/r4_kctx_05.jpg"/>
+					<img class="fangda" src="img/r4_kctx_07.jpg"/>
+					<img class="fangda" src="img/r4_kctx_08.jpg"/>
+					<img class="fangda" src="img/r4_kctx_09.jpg"/>
+				</div>
+				<div class="xiabian">
+					<img class="fangda" src="img/r4_kctx_17.jpg"/>
+					<img class="fangda" src="img/r4_kctx_18.jpg"/>
+					<img class="fangda" src="img/r4_kctx_19.jpg"/>
+					<img class="fangda" src="img/r4_kctx_21.jpg"/>
+				</div>
+			</div>
+			
+				
+			
+			<div class="last">
+				<div class="xiazai">
+					<img src="img5/1546929756610527.png" ><br>
+					<p>&nbsp;&nbsp;下载课工场APP</p>
+				</div>&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="guanzhu">
+					<img src="img5/1546929407811629.jpg" ><br>
+					<p>&nbsp;&nbsp;关注课工场公众号</p>
+				</div>
+				<div class="guanyu">
+					<ul>关于我们
+						<li><a href="#">课工场简介</a></li>
+						<li><a href="#">Ekgc简介</a></li>
+						<li><a href="#">走近创始人</a></li>
+						<li><a href="#">网站地图</a></li>
+						<li><a href="#">服务条款</a></li>
+						<li><a href="#">版权声明</a></li>
+					</ul>
+				</div>
+				<div class="youzhi">
+					<ul>优质资源
+						<li><a href="#">系列课</a></li>
+						<li><a href="#">岗位课</a></li>
+						<li><a href="#">题库</a></li>
+						<li><a href="#">教材</a></li>
+						<li><a href="#">师资</a></li>
+					</ul>
+				</div>
+				<div class="fuwu">
+					<ul>服务中心
+						<li><a href="#">微社区</a></li>
+						<li><a href="#">周边商城</a></li>
+						<li><a href="#">实训基地</a></li>
+						<li><a href="#">帮助中心</a></li>
+					
+					</ul>
+				</div>
+				<div class="youqing">
+					<ul>友情链接
+						<li><a href="#">课工场</a></li>
+						<li><a href="#">北大青鸟</a></li>
+						<li><a href="#">北京大学</a></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+		<a href="https://admin.qidian.qq.com/template/blue/mp/menu/qr-code-jump.html?linkType=0&env=ol&kfuin=2852150124&fid=96&key=9f8492421437aaf7afcc7c089f4a888b&cate=1&type=16&ftype=1&_type=wpa&qidian=true"><img class="guding" src="img/xiaoguniang.png" ></a>
+	</body>	
+</html>

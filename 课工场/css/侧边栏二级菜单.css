@@ -1,0 +1,21 @@
+ .diyikuai{
+		 
+		 width: 280px;
+		 height: 250px;
+		 float: left;
+		 z-index: 100;
+		 display: none;
+	 }
+.yixiao,.erxiao,.sanxiao,.sixiao{
+	
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+.diyi:hover ul{
+	display: block;
+	position: absolute;
+	top:0px;
+	left: 180px;
+	
+}

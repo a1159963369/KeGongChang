@@ -1,0 +1,20 @@
+.cebian{
+	width: 220px;
+	
+	background: #323232;
+	position: absolute;
+	top: 200px;
+	left: 169px;
+	z-index: 1;
+}
+.cebian>div{
+	width: 220px;
+	height: 72px;
+	line-height:12px ;
+}
+.cebian>div:hover{
+	background: #5a5a5a;
+}
+.hui{
+	background: silver;
+}

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="js5/swiper.min.css">
+		<style>
+			.zuo{
+				float: left;
+				width: 600px;
+				text-align: center;
+				text-indent: 5em;
+			}
+			.sousuolan{
+				height: 30px;
+				width: 250px;
+				float: left;
+				list-style: none;
+				position: relative;
+				top: 20px;
+				left: 50px;
+			}
+			.you{
+				float: right;
+				width: 200px;
+				height: 30px;
+				position: relative;
+				top: 20px;
+				
+			}
+			.search_key{
+				width: 250px;
+				height:30px;
+			}
+			.zuo a{
+				color: dimgray;
+				text-decoration: none;
+				font-size: 12px;
+			}	
+			a:hover{
+				color: mediumseagreen;
+			}
+			.tu{
+				position: relative;
+				width: 100px;
+				height: 50px;
+			}
+			span a{
+				color: mediumseagreen;
+			}
+			.you a{
+				color: dimgray;
+				text-decoration: none;
+				font-size: 10px;
+			}
+			.top{
+				background-color: white;
+				width: 100%;
+				height: 80px;
+			}
+			.zhuti{
+				width: 100%;
+				height: 1000px;
+				background: white;
+			}
+			.last{position: absolute;
+				margin-top:200px;
+				background-color: #A9A9A9;
+				width: 100%;
+				height: 400px;
+			}
+			.last a{
+				text-decoration: none;
+				color:dimgray ;
+				font-size: 10px;
+			}
+			.last a:hover{
+				
+				color:mediumseagreen ;
+			}
+			.xiazai{
+				float: left;
+				width: 120px;
+				height: 120px;
+				margin-left: 200px;
+				margin-top: 100px;
+			}
+			.guanzhu{
+				float: left;
+				width: 120px;
+				height:120px;
+				margin-left: 20px;
+				margin-top: 100px;
+			}
+			.guanyu{
+				float: left;
+				margin-left: 100px;
+				margin-top: 100px;
+			}
+			.youzhi{
+				float: left;
+				margin-left: 100px;
+				margin-top: 100px;
+			}
+			.fuwu{
+				float: left;
+				margin-left: 100px;
+				margin-top: 100px;
+			}
+			.youqing{
+				float: left;
+				margin-left: 100px;
+				margin-top: 100px;
+			}
+			ul li{
+				list-style: none;
+			}
+			.rencai{
+				background: white ;
+				width: 100%;
+				height: 550px;
+			}
+			.web{
+				float: left;
+				border-radius: 10px;
+				margin-left: 15%;
+				margin-bottom: 50px;
+			}
+			.erji{
+				float: left;
+				border-radius: 10px;
+				margin-left: 15%;
+			}
+			.yunjisuan{
+				float: left;
+				border-radius: 10px;
+				margin-left: 3%;
+			}
+			.UI{
+				float: left;
+				border-radius: 10px;
+				margin-left: 3%;
+			}
+			.erjidaohang{
+				width: 100%;
+				height: 200px;
+			}
+			.daohang a{
+				font-size: 20px;
+				color: dimgrey;
+				text-decoration: none;
+				margin-left: 10%;
+			}
+			.daohang a:hover{
+				color: green;
+			}
+			.erjidaohang span{
+				font-size: 5px;
+				color: darkgrey;
+				margin-left: 46%;
+			}
+			.dianci{
+				color: green;
+				font-size: 5px;
+				text-decoration: none;
+			}
+			.mianfei,.xilie,.zhiye,.gaoxiao{
+			    width: 100%;
+			    height: 800px;
+			}
+			.mianfeiti,.xilieti,.zhiyeti,.gaoxiaoti{
+				width: 100%;
+				height: 100px;
+			}
+			.mianfeiti h1,.xilieti h1,.zhiyeti,.gaoxiaoti{
+				color: dimgrey;
+				margin-left: 10%;
+			}
+			.mianfeilian,.xilielian{
+				color: gray;
+				font-size: 20px;
+				text-decoration: none;
+				float: right;
+				margin-right:10%;
+			}
+			
+			.beimei{
+				float: left;
+				margin-left: 10%;
+			}
+			.mingqi{
+				float: left;
+				margin-left: 2%;
+			}
+			.chushi{
+				float: left;
+				margin-left: 2%;
+			}
+			.zoujin{
+				float: left;
+				margin-left: 2%;
+			}
+			.ai{
+				float: left;
+				margin-left: 10%;
+			}
+			.html{
+				float: left;
+				margin-left: 1.5%;
+			}
+			.tiaoyue{
+				float: left;
+				margin-left: 2%;
+			}
+			.shejiao{
+				float: left;
+				margin-left: 2%;
+			}
+			.java{
+				float: left;
+				margin-left: 10%;
+			}
+			.sp{
+				float: left;
+				margin-left: 2%;
+			}
+			.yunjisuan{
+				float: left;
+				margin-left: 2%;
+			}
+			.baibian{
+				float: left;
+				margin-left: 2%;
+			}
+			.xueke{
+				float: right;
+				margin-right: 11%;
+			}
+			.an{
+				float: right;
+				margin-right: 1.5%;
+			}
+			.shuangshiyi{
+				float: right;
+				margin-right: 2%;
+				}
+			.sm{
+				float: right;
+				margin-right: 3%;
+			}
+			.kaifa{
+				margin-left: 10%;
+				width: 70%;
+			}
+			.zhiyelian,.gaoxiaolian{
+	        color: gray;
+			font-size: 20px;
+			text-decoration: none;
+			float: right;
+			margin-right:25%;
+			}
+			.zhiye-a{
+				float: left;
+				margin-left: 10%;
+			}
+			.zhiye-b{
+				float: left;
+				margin-left: 10%;
+				margin-top: 20px;
+			}
+			.zhiye-c{
+				float: left;
+				margin-left: 10%;
+				margin-top: 25px;
+			}
+			.zhiye-d{
+				float: left;
+				margin-left: 10%;
+				margin-top: 20px;
+			}
+			.zhiye-e{
+				
+				float: right;
+				margin-right: 12%;
+			}
+			.zhiye-f{
+				float: right;
+				margin-right: 9%;
+				margin-top: 30px;
+			}
+			.zhiye-g{
+				float: right;
+				margin-right: 12%;
+				margin-top: 30px;
+			}
+			.zhiye-h{
+				float: right;
+				margin-right: 11%;
+				margin-top: 20px;
+			}
+			.gaoxiao-a{
+				float: left;
+				margin-left: 10%;
+			}
+			.gaoxiao-b{
+				float: left;
+				margin-left: 2%;
+				
+			}
+			.gaoxiao-c{
+				float: left;
+				margin-left: 2%;				
+			}
+			.gaoxiao-d{
+				float: left;
+				margin-left: 2%;
+				margin-top: 15px;				
+			}
+			.gaoxiao-e{
+				float: left;
+				margin-left: 2%;				
+			}
+			.gaoxiao-f{
+			    float: left;
+				margin-left: 2%;
+				margin-top: 20px;				
+			}
+			 .swiper-container {
+      width: 100%;
+      height: 300px;
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+		</style>
+	</head>
+	<body>
+<div class="top">
+		    <div class="zuo">
+			    <a href="#"><img src="img5/1555375994280734.png" class="tu"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    <a href="#">系列</a>&nbsp;&nbsp;&nbsp;
+			    <a href="#">岗位</a>&nbsp;&nbsp;&nbsp;
+			    <a href="#">实战</a>&nbsp;&nbsp;&nbsp;
+			    <a href="#">题库</a>&nbsp;&nbsp;&nbsp;
+			    <a href="#">社区</a>&nbsp;&nbsp;&nbsp;
+			    <a href="#">教材</a>&nbsp;&nbsp;&nbsp;
+			    <a href="#">阿里云</a>&nbsp;&nbsp;&nbsp;
+			    <a href="#">校区</a>
+		    </div>
+		    <div class="sousuolan">
+				<input type="text"class="search_key" value="搜索&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp HTML5"/>
+		    </div>
+		    <div class="you">
+			<span class="app"><a href="#">app下载</a></span>&nbsp;&nbsp;&nbsp;
+			<a href="#">登录</a>
+			丨
+			<a href="#">注册</a>
+		    </div>
+		    
+		</div>
+		<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img5/1543305604337375.jpg"/></div>
+      <div class="swiper-slide"><img src="img5/1543305028160610.jpg"/></div>
+      <div class="swiper-slide"><img src="img5/1543453714974452.jpg"/></div>
+      <div class="swiper-slide"><img src="img5/1542684368486239.jpg"style="width: 160px;height: 218px;"/></div>
+      <div class="swiper-slide"><img src="img5/1543453737586466.jpg"/></div>
+      <div class="swiper-slide"><img src="img5/1543305736566353.jpg"/></div>
+      <div class="swiper-slide"><img src="img5/1543305748570168.jpg"/></div>
+      <div class="swiper-slide"><img src="img5/1543305775764521.jpg"/></div>
+      <div class="swiper-slide"><img src="img5/1543453748850562.jpg"/></div>
+      <div class="swiper-slide"><img src="img5/1543367384748313.jpg"/></div>
+      <div class="swiper-slide"><img src="img5/1543367397483301.jpg"/></div>
+      <div class="swiper-slide"><img src="img5/1543290129653397.png"/></div>
+ 	    
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js5/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true, //为true启动自动切换
+        speed:500, // 切换速度，即slider自动滑动开始到结束的时间（单位ms）
+        loop: true,  //循环切换
+      })
+    </script>
+  <script>
+    var swiper = new Swiper('.swiper-container');
+  </script>
+		<div class="rencai">
+			<div class="web">
+				<img src="img5/1575600623416852.jpg"/>
+			</div>
+			<div class="erji">
+				<img src="img5/1573718293546960.jpg"/>
+			</div>
+			<div class="yunjisuan">
+				<img src="img5/1569077680576973.jpg"/>
+			</div>
+			<div class="UI">
+				<img src="img5/1562137489498538.jpg"/ style="width: 375px;height: 190px;">
+			</div>
+		</div>
+		<div class="erjidaohang">
+			<div class="daohang">
+			<br /><br /><br />
+			<a href="#">创意设计</a>
+			<a href="#">Java大数据</a>
+			<a href="#">前端</a>
+			<a href="#">云计算</a>
+			<a href="#">网络营销</a>
+			<a href="#">更多技术</a>
+			</div>
+			<br /><br />
+			<span>登录后可为您推荐课程</span> &nbsp;&nbsp;&nbsp;
+			<a href="#" class="dianci">点此登录</a>
+		</div>
+		<div class="mianfei">
+			<div class="mianfeiti">
+				<h1>免费课程推荐</h1>
+				<a href="#" class="mianfeilian">更多免费课程</a>
+			</div>
+			<div class="beimei">
+				<a href="#"><img src="img5/1.PNG"/></a>
+			</div>
+			<div class="mingqi">
+				<a href="#"><img src="img5/2.PNG"/></a>
+			</div>
+			<div class="chushi">
+				<a href="#"><img src="img5/3.PNG"/></a>
+			</div>
+			<div class="zoujin">
+				<a href="#"><img src="img5/4.PNG"/></a>
+			</div>
+			<div class="ai">
+				<a href="#"><img src="img5/5.PNG"/></a>
+			</div>
+			<div class="html">
+				<a href="#"><img src="img5/6.PNG"/></a>
+			</div>
+			<div class="tiaoyue">
+				<a href="#"><img src="img5/7.PNG"/></a>
+			</div>
+			<div class="shejiao">
+				<a href="#"><img src="img5/8.PNG"/></a>
+			</div>
+		</div>
+		<div class="xilie">
+			<div class="xilieti">
+				<h1>系列课程推荐</h1>
+				<a href="#" class="xilielian">更多系列课程</a>
+			</div>
+			<div class="java">
+				<a href="#"><img src="img5/9.PNG"/></a>
+			</div>
+			<div class="sp">
+				<a href="#"><img src="img5/10.PNG"/></a>
+			</div>
+			<div class="yunjisuan">
+				<a href="#"><img src="img5/11.PNG"/></a>
+			</div>
+			<div class="baibian">
+				<a href="#"><img src="img5/12.PNG"/></a>
+			</div>
+			<div class="xueke">
+				<a href="#"><img src="img5/16.PNG"/></a>
+			</div>
+			<div class="an">
+				<a href="#"><img src="img5/15.PNG"/></a>
+			</div>
+			<div class="shuangshiyi">
+				<a href="#"><img src="img5/14.PNG"/></a>
+			</div>
+			<div class="sm">
+				<a href="#"><img src="img5/13.PNG"/></a>
+			</div>
+		</div>
+		<div class="zhiye">
+			<div class="zhiyeti">
+				<h1>职业课程推荐</h1>
+				<a href="#" class="zhiyelian">更多职业课程</a>
+			</div>
+			<div class="kaifa">
+				<a href="#"><img src="img5/1567148398204708.jpg"/></a>
+			</div>
+			<div class="zhiye-a">
+				<a href="#"><img src="img5/17.PNG"/></a>
+			</div>
+			<div class="zhiye-b">
+				<a href="#"><img src="img5/18.PNG"/></a>
+			</div>
+			<div class="zhiye-c">
+				<a href="#"><img src="img5/19.PNG"/></a>
+			</div>
+			<div class="zhiye-d">
+				<a href="#"><img src="img5/20.PNG"/></a>
+			</div>
+			<div class="zhiye-e">
+				<a href="#"><img src="img5/24.PNG"/></a>
+			</div>
+			<div class="zhiye-f">
+				<a href="#"><img src="img5/23.PNG"/></a>
+			</div>
+			<div class="zhiye-g">
+				<a href="#"><img src="img5/22.PNG"/></a>
+			</div>
+			<div class="zhiye-h">
+				<a href="#"><img src="img5/21.PNG"/></a>
+			</div>
+		</div>
+		<div class="gaoxiao">
+			<div class="gaoxiaoti">
+				<h1>高校专区</h1>
+				<a href="#" class="gaoxiaolian">更多高校</a>
+			</div>
+			<div class="gaoxiao-a">
+				<a href="#"><img src="img5/25.PNG"/></a>
+			</div>
+			<div class="gaoxiao-b">
+				<a href="#"><img src="img5/26.PNG"/></a>
+			</div>
+			<div class="gaoxiao-c">
+				<a href="#"><img src="img5/27.PNG"/></a>
+			</div>
+			<div class="gaoxiao-d">
+				<a href="#"><img src="img5/28.PNG"/></a>
+			</div>
+			<div class="gaoxiao-e">
+				<a href="#"><img src="img5/29.PNG"/></a>
+			</div>
+			<div class="gaoxiao-f">
+				<a href="#"><img src="img5/30.PNG"/></a>
+			</div>
+		</div>
+								
+				
+		<!--尾部-->
+		<div class="last">
+			<div class="xiazai">
+				<img src="img5/1546929756610527.png" ><br>
+				<p>&nbsp;&nbsp;下载课工场APP</p>
+			</div>&nbsp;&nbsp;&nbsp;&nbsp;
+			<div class="guanzhu">
+				<img src="img5/1546929407811629.jpg" ><br>
+				<p>&nbsp;&nbsp;关注课工场公众号</p>
+			</div>
+			<div class="guanyu">
+				<ul>关于我们
+					<li><a href="#">课工场简介</a></li>
+					<li><a href="#">Ekgc简介</a></li>
+					<li><a href="#">走近创始人</a></li>
+					<li><a href="#">网站地图</a></li>
+					<li><a href="#">服务条款</a></li>
+					<li><a href="#">版权声明</a></li>
+				</ul>
+			</div>
+			<div class="youzhi">
+				<ul>优质资源
+					<li><a href="#">系列课</a></li>
+					<li><a href="#">岗位课</a></li>
+					<li><a href="#">题库</a></li>
+					<li><a href="#">教材</a></li>
+					<li><a href="#">师资</a></li>
+				</ul>
+			</div>
+			<div class="fuwu">
+				<ul>服务中心
+					<li><a href="#">微社区</a></li>
+					<li><a href="#">周边商城</a></li>
+					<li><a href="#">实训基地</a></li>
+					<li><a href="#">帮助中心</a></li>
+				
+				</ul>
+			</div>
+			<div class="youqing">
+				<ul>友情链接
+					<li><a href="#">课工场</a></li>
+					<li><a href="#">北大青鸟</a></li>
+					<li><a href="#">北京大学</a></li>
+				</ul>
+			</div>
+			
+			
+		</div>
+	</body>
+</html>

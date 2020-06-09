@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>人工智能课程</title>
+		<link rel="stylesheet" href="js4/swiper.min.css">
+		<style type="text/css">
+			*{
+				margin: 0 auto;
+				padding: 0;
+				border: 0;
+			}
+			.top{
+				background: url(img4/1.png) black no-repeat;
+				background-position:center; 
+				height: 900px;
+				width: 100%;
+			}
+			.k h1{
+				color: white;
+				text-align: center;
+				font-style: 宋体;
+				font-size: 25px;
+				margin-top: 13px;
+			}
+			.bol{
+				width: 100%;
+			}
+			.san{
+				text-align: center;
+				margin:0 auto;
+			}
+			.cen{
+				position: relative;
+				top: 320px;
+				left:48%;
+			}
+			.k{
+				position: relative;
+				top: 150px;
+				width: 300px;
+				height: 70px;
+				border: 1px solid deepskyblue;
+			}
+			a{
+				text-decoration: none;
+				font-style: 微软雅黑;
+				color: #00BFFF;
+			}
+			a:hover{
+				text-decoration: underline;
+			}
+			.daohang{
+				text-indent: 15em;
+			}
+			.second{
+				background-color: #000000;
+				width: 100%;
+				height: 600px;
+			}
+			.second h1{
+				color: #00BFFF;
+				text-align: center;
+				font-style: 宋体;
+			}
+			.second h2{
+				color: darkgray;
+				text-align: center;
+				font-style: 宋体;
+			}
+			.swiper-container {
+			    width: 100%;
+			    height: 400px;
+			}  
+			.swiper-slide {
+			  text-align: center;
+			  font-size: 18px;
+			  background: #fff;
+			
+			  /* Center slide text vertically */
+			  display: -webkit-box;
+			  display: -ms-flexbox;
+			  display: -webkit-flex;
+			  display: flex;
+			  -webkit-box-pack: center;
+			  -ms-flex-pack: center;
+			  -webkit-justify-content: center;
+			  justify-content: center;
+			  -webkit-box-align: center;
+			  -ms-flex-align: center;
+			  -webkit-align-items: center;
+			  align-items: center;
+			}
+			html, body {
+			  position: relative;
+			  height: 100%;
+			}
+			body {
+			  background: #eee;
+			  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			  font-size: 14px;
+			  color:#000;
+			  margin: 0;
+			  padding: 0;
+			}
+			.last h1{
+				color: #007AFF;
+				text-align: center;
+				font-style: 微软雅黑;
+				position: relative;
+				top: 15px;
+			}
+			.last{
+				background: url(./img4/5.jpg) no-repeat ;
+				text-align: center;
+				width: 100%;
+				height: 400px;
+				background-size: 101% 478px;
+			}
+			.last p{
+				color: black;
+				font-size: 15px;
+				font-style: 宋体;
+				text-align: center;
+				margin-top: 10px;
+			}
+			.last p span{
+				color: #007AFF;
+				text-align: center;
+			}
+			.biaoge{
+				background-color: black;
+				width: 100%;
+				height: 700px;
+			    margin:0 auto ;
+			    padding: 0;
+			}
+			.biaogeti h1{
+				font-style: 宋体;
+				text-align: center;
+				color:royalblue;
+			}
+			.biaogeti h2{
+				font-style: 宋体;
+				text-align: center;
+				color: gray;
+			}
+			table .hangyi{
+				background-color: dodgerblue;
+				border: none;
+			}
+			.biaoge tr td{
+				color: white;
+				text-align: center;
+				border: solid 1px white;
+			}
+			table{
+				margin-left: 15%;
+				width: 70%;
+				height: 550px;
+				border: solid 1px white;
+				border-collapse: collapse;
+				margin-top: 20px;
+			}
+			.biaoge span{
+				font-size: 20px;
+			}
+			.guihua{
+				background-color: #000000;
+				width: 100%;
+				height: 700px;
+				margin-top: 0 auto;
+			}
+			.guihuati h1{
+				font-style: 宋体;
+				text-align: center;
+				color:royalblue;
+			}
+			.guihuati h2{
+				font-style: 宋体;
+				text-align: center;
+				color: gray;
+			}
+			.AI{
+				width: 20%;
+				height: 200px;
+				background:#161524 ;
+				border: solid 2px #3281ff;
+				margin-left: 15%;
+				float: left;
+			}
+			.AItu{
+				float: right;
+				margin-top: 0 auto;
+			}
+		    .AItext{
+		    	color: white;
+		    	margin-left: 10px;
+				margin-top: 10px;
+		    }
+		    .tuxiang{
+				width: 20%;
+				height: 200px;
+				background:#161524 ;
+				border: solid 2px #3281ff;
+				margin-left: 5%;
+				float: left;
+			}
+			.tuxiangtu{
+				float: right;
+				margin-top: 0 auto;
+			}
+		    .tuxiangtext{
+		    	color: white;
+		    	margin-left: 10px;
+				margin-top: 10px;
+		    }
+		     .ziran{
+				width: 20%;
+				height: 200px;
+				background:#161524 ;
+				border: solid 2px #3281ff;
+				margin-left: 5%;
+				float: left;
+			}
+			.zirantu{
+				float: right;
+				margin-top: 0 auto;
+			}
+		    .zirantext{
+		    	color: white;
+		    	margin-left: 10px;
+				margin-top: 10px;
+		    }
+		    .yuyin{
+				width: 20%;
+				height: 200px;
+				background:#161524 ;
+				border: solid 2px #3281ff;
+				margin-left: 15%;
+				margin-top: 50px;
+				float: left;
+			}
+			.yuyintu{
+				float: right;
+				margin-top: 0 auto;
+			}
+		    .yuyintext{
+		    	color: white;
+		    	margin-left: 10px;
+				margin-top: 10px;
+		    }
+		     .shuju{
+				width: 20%;
+				height: 200px;
+				background:#161524 ;
+				border: solid 2px #3281ff;
+				margin-left: 5%;
+				margin-top: 50px;
+				float: left;
+			}
+			.shujutu{
+				float: right;
+				margin-top: 0 auto;
+			}
+		    .shujutext{
+		    	color: white;
+		    	margin-left: 10px;
+				margin-top: 10px;
+		    }
+		     .fenxi{
+				width: 20%;
+				height: 200px;
+				background:#161524 ;
+				border: solid 2px #3281ff;
+				margin-left: 5%;
+				margin-top: 50px;
+				float: left;
+			}
+			.fenxitu{
+				float: right;
+				margin-top: 0 auto;
+			}
+		    .fenxitext{
+		    	color: white;
+		    	margin-left: 10px;
+				margin-top: 10px;
+		    }
+		    .kexue{
+		    	width: 100%;
+		    	height: 1000px;
+		    	background-color: #f9f7fa;
+		    }
+		    .kexueti h1{
+				font-style: 宋体;
+				text-align: center;
+				color:royalblue;
+			}
+			.kexueti h2{
+				font-style: 宋体;
+				text-align: center;
+				color: gray;
+			}
+			li{ list-style:none}
+			a:focus {  outline:none;}  
+			a{ text-decoration:none;outline: none;}
+			.tab{
+				width:70%;
+				height: 600px;
+				border: 2px solid #3281ff;
+				margin: 100px auto;
+				position: relative;
+			}
+			.tab ul{
+				overflow: hidden;
+				border-bottom: 2px solid #3281ff;
+			}
+			.tab li{
+				height: 30px;
+				line-height: 30px;
+				font-size: 14px;
+				float: left;
+				background:#f9f7fa;
+				padding: 0 10px;
+				margin-right: 2px;
+				cursor: pointer;
+				color: #007AFF;
+			}
+			.tab li.active{
+				background: #3281ff;
+				color: #fff;
+			}
+			.tab .cont{
+				width: 100%;
+				height: 200px;
+				position: absolute;
+				background: #fff;
+				display: none;
+			}
+			.tab h1 span{
+				color:#007AFF ;
+				margin-left: 25px;
+			}
+			.tab p{
+				margin-left: 200px;
+				margin-right: 25px;
+				margin-top: 20px;
+				color: #A9A9A9;
+			}
+			.xuxian{
+				margin-left: 25px;
+			}
+			.yinyong{
+				width: 100%;
+				height: 1100px;
+				background-color:#f9f7fa ;
+			}
+			.yinyongti h1{
+				font-style: 宋体;
+				text-align: center;
+				color:royalblue;
+			}
+			.yinyongti h2{
+				font-style: 宋体;
+				text-align: center;
+				color: gray;
+			}
+			.chepai{
+				border:solid 2px #ebebeb;
+				width: 35%;
+				height: 250px;
+				margin-top: 100px;
+				float: left;
+				margin-left: 15%;
+			}
+			.huixian{
+				width: 90%;
+				margin-top: 10px;
+				margin-left: 15px;
+			}
+			.ti{
+				color: #007AFF;
+				font-size: 50px;
+				margin-top: 50px;
+				margin-left: 20px;
+			}
+			.textti{
+				color: gray;
+				font-size: 25px;
+				margin-top: 50px;
+			}
+			.yinyong p{
+				margin-left: 20px;
+				margin-right: 20px;
+				margin-top: 20px;
+				color: lightslategrey;
+			}
+			.shenfen{
+				border:solid 2px #ebebeb;
+				width: 35%;
+				height: 250px;
+				margin-top: 100px;
+				float: left;
+				margin-left: 5%;
+			}
+			.renlian{
+				border:solid 2px #ebebeb;
+				width: 35%;
+				height: 250px;
+				margin-top: 100px;
+			    float: right;
+				margin-right:5%;
+			}
+			.kefu{
+				border:solid 2px #ebebeb;
+				width: 35%;
+				height: 250px;
+				margin-top: 100px;
+				float: right;
+				margin-right: 9.5%;
+			}
+			.gengduo{
+				margin-left: 42.5%;
+				margin-top: 80px;
+			}
+			.dingji{
+				width: 100%;
+				height: 1600px;
+				background-color:#f9f7fa ;
+			}
+			.dingji h1{
+				font-style: 宋体;
+				text-align: center;
+				color:royalblue;
+			}
+			.dingji h2{
+				font-style: 宋体;
+				text-align: center;
+				color: gray;
+			}
+			.dingji p{
+				margin-left: 20px;
+				margin-right: 20px;
+				margin-top: 10px;
+				color: lightslategrey;
+			}
+			.dingji span{
+				color: lightslategrey;
+				font-size: 25px;
+				margin-top: 80px;
+				margin-left:20px ;
+			}
+			.touxiang{
+				position: relative;
+				left: 20px;
+				top:20px ;
+			}
+			.xiaorui{
+				border:solid 2px #ebebeb;
+				width: 35%;
+				height: 300px;
+				margin-top: 100px;
+				float: left;
+				margin-left: 15%;
+			}
+			.shangjunjie{
+				border:solid 2px #ebebeb;
+				width: 35%;
+				height: 300px;
+				margin-top: 100px;
+				float: left;
+				margin-left: 5%;
+			}
+			.huangwenbin{
+				border:solid 2px #ebebeb;
+				width: 35%;
+				height: 300px;
+				margin-top: 100px;
+				float: left;
+				margin-left: 15%;
+			}
+			.lige{
+				border:solid 2px #ebebeb;
+				width: 35%;
+				height: 300px;
+				margin-top: 100px;
+				float: left;
+				margin-left: 5%;
+			}	
+			.Wayne{
+				border:solid 2px #ebebeb;
+				width: 35%;
+				height: 300px;
+				margin-top: 100px;
+				float: left;
+				margin-left: 15%;
+			}
+			.lina{
+				border:solid 2px #ebebeb;
+				width: 35%;
+				height: 300px;
+				margin-top: 100px;
+				float: left;
+				margin-left: 5%;
+			}	
+			.hezuo{
+				width: 100%;
+				height: 700px;
+				background-color:white;
+			}
+			.hezuo h1{
+				font-style: 宋体;
+				text-align: center;
+				color:royalblue;
+			}
+			.hezuotab{
+				width: 80%;
+				height: 450px;
+				border: 2px solid #ebebeb;
+				margin: 100px auto;
+				position: relative;
+			}
+			.hezuotab ul{
+				overflow: hidden;
+				border-bottom: 2px solid #ebebeb;
+			}
+			.hezuotab li{
+				height: 30px;
+				line-height: 30px;
+				font-size: 14px;
+				float: left;
+				background: white;
+				padding: 0 10px;
+				margin-right: 2px;
+				cursor: pointer;
+			}
+			.hezuotab li.active{
+				background:white ;
+				color: #3281ff;
+			}
+			.hezuotab .cont{
+				width: 100%;
+				height: 200px;
+				position: absolute;
+				background: #fff;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 头部开始 -->
+		<div class="top">
+			<div class="daohang">
+				<h1>
+				<a href="">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="">人工智能</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="">大学教材</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="">师资力量</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="">在线课程</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="">关于我们</a>
+				</h1>
+			</div>
+			<div class="k">
+			<h1>打造真AI真实战真英雄</h1>
+			</div>
+			<div class="cen">
+			<a href="img4/2.mp4"><img src="img4/6.png" width="50px "height="50px"></a>
+			</div>
+		</div>
+		<!-- //头部结束 -->
+		<!-- 主体内容开始 -->
+		<div class="second">
+			<img src="./img4/2.jpg" class="bol" >
+			<h1>为什么学人工智能</h1><br>
+			<h2>比起智能我们更缺人工</h2>
+		</div>
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide">
+				<img src="img4/1.jpg"/>
+		    </div>
+		    <div class="swiper-slide">
+				<img src="img4/3.jpg"/>
+			</div>
+		    <div class="swiper-slide">
+				<img src="img4/4.jpg"/>
+			</div>
+		   
+		  </div>
+		  <!-- Add Pagination -->
+		  <div class="swiper-pagination"></div>
+		  <!-- Add Arrows -->
+		  <div class="swiper-button-next"></div>
+		  <div class="swiper-button-prev"></div>
+		</div>
+		<div class="biaoge">
+			<div class="biaogeti">
+			<h1>什么样的人适合学</h1><br />
+			<h2>如果你有着如下的困扰，解决问题的时候到了</h2>
+		    </div>
+		    <div>
+		    	
+		    
+		
+		    
+		    	<table >
+		    		<tr class="hangyi">
+		    			<td width="15%" height="70px" ><span>适合人群</span></td>
+		    			<td width="20%"><span>需要解决的问题</span></td>
+		    			<td width="40%"><span>课工场提供的解决方案</span></td>
+		    		</tr>
+		    		<tr>
+		    			<td><img src="img4/3.png"/><h2>大学生</h2></td>
+		    			<td>就业需求迫在眉睫，对未来充满期待和不确定，该入哪一行、选择什么职业？</td>
+		    			<td>通过大量的真实项目训练，提升动手能力，增加项目实战经验。课上课下全天候训练，锻炼实战开发项目的能力。巩固学过的数学知识，理解算法原理，增加项目动手经验的同时，为更高层次的算法解决方案打好基础。</td>
+		    		</tr>
+		    		<tr>
+		    			<td><img src="img4/4.png"/><h2>职场分析（数据分析）</h2></td>
+		    			<td>已经拥有了数据分析抓取方面工作经验的白领，技能发展遇到瓶颈，如何突破职业天花板？</td>
+		    			<td>充分利用已有数据方面的经验技能，对AI算法的推导过程原理进行深度补充，在数据挖掘分析基础上进一步提升，从数据引入深度学习知识，在数据基础上进入AI的学习，将数据分析挖掘的知识充分灵活运用，运用算法解决实际问题。</td>
+		    		</tr>
+		    		<tr>
+		    			<td><img src="img4/5.png"/><h2>IT从业者</h2></td>
+		    			<td>Javaer、PHPer、前端er...具备了丰富的项目开发经验，职业发展进入平台期，如何迈进科技前沿行业？</td>
+		    			<td>直接跳过编程基础，通过项目之间横向和纵向的对比，迅速进入AI项目的开发，在开发过程中理解AI项目的开发过程及技能，理解深度学习开发AI项目，大大增加在算法开发方面的能力。</td>
+		    		</tr>
+		    	</table>
+		    	
+		    	
+		    	
+		    	
+		    	
+		    	
+		    	
+		    	
+		    	
+		    </div>
+		    
+		    
+		    
+		        
+		</div>
+		<div class="guihua">
+			<div class="guihuati">
+				<h1>人工智能从业者职业规划</h1><br />
+			<h2>人工智能到底干什么？人工智能岗位都有哪些？</h2>
+			</div><br />
+			<div class="AI">
+				<img src="img4/15.PNG" class="AItu">
+				<div class="AItext">
+					<h2>AI算法工程师</h2>
+					<img src="img4/21.PNG">
+					<p>1、深度学习算法研究、实现和优化，负责特定需求的深度学习算法解决方案。</p><br>
+					<p>2、跟进业界人工智能的研究成果，开发并提升相应的算法任务</p>
+				</div>
+			</div>
+			<div class="tuxiang">
+				<img src="img4/16.PNG" class="tuxiangtu">
+				<div class="tuxiangtext">
+					<h2>图像识别工程师</h2>
+					<img src="img4/21.PNG">
+					<p>1、根据公司产品和业务需求，进行相关图像算法的研究和开发。</p><br>
+					<p>2、负责相关算法的核心代码实现或移植。</p>
+				</div>
+			</div>
+			<div class="ziran">
+				<img src="img4/17.PNG" class="zirantu">
+				<div class="zirantext">
+					<h2>自然语言处理工程师</h2>
+					<img src="img4/21.PNG">
+					<p>1、根据公司产品和业务需求，进行相关NLP算法的研究和开发。</p><br>
+					<p>2、负责NLP问题的研究，完成知识抽取、实体匹配、语义消歧、关系抽取等应用的研发。</p>
+				</div>
+			</div>
+			<div class="yuyin">
+				<img src="img4/18.PNG" class="yuyintu">
+				<div class="yuyintext">
+					<h2>语音识别工程师</h2>
+					<img src="img4/21.PNG">
+					<p>1、参与公司核心语音识别算法的设计和研究及其工程实现。</p><br>
+					<p>2、负责跟进行业前沿技术发展趋势，不断优化当前神经网络模型。</p>
+				</div>
+			</div>
+			<div class="shuju">
+				<img src="img4/19.PNG" class="shujutu">
+				<div class="shujutext">
+					<h2>数据挖掘工程师</h2>
+					<img src="img4/21.PNG">
+					<p>1、对产品与用户数据进行爬取和分析，发现数据背后的特征规律；</p><br>
+					<p>2、完成产品、市场等部门提出的各类数据挖掘需求、完成机器学习与数据挖掘项目。</p>
+				</div>
+				</div>
+				<div class="fenxi">
+				<img src="img4/20.PNG" class="fenxitu">
+				<div class="fenxitext">
+					<h2>数据挖掘工程师</h2>
+					<img src="img4/21.PNG">
+					<p>1、对产品与用户数据进行爬取和分析，发现数据背后的特征规律；</p><br>
+					<p>2、完成产品、市场等部门提出的各类数据挖掘需求、完成机器学习与数据挖掘项目。</p>
+				</div>
+				</div>
+		</div>
+		<div class="kexue">
+			<div class="kexueti">
+				<br><br>
+				<h1>科学实用的课程体系</h1><br /><br>
+			<h2>成体系培养，符合行业发展趋势</h2>
+			</div>
+			<div id="tab" class="tab">
+			<ul>
+				<li class="active"><h1>人工智能</h1></li>
+				<li><h1>数据分析</h1></li>
+				<li><h1>Python</h1></li>
+			</ul>
+			<div class="cont" style="display: block;"><br>
+				<h1><span>人工智能初级：</span>人工智能技术和应用场景的全面解析，系统化介绍人工智能技术链条</h1><br>
+				<img src="img4/7.jpg" class="xuxian">
+				<p>通过实例对人工智能的开发语言载体Python进行深入理解并掌握Python语法规则，变量和数据类型，程序结构控制，Python的数据结构，Python中的OOP，了解-神经网络的训练方法和流程，学习主流机器学习、深度学习框架环境的搭建，TensorFlow、Keras、Caffe等。</p><br>
+				<h1><span>人工智能中级：</span>本模块重点在于算法的开发实现方面，学习人工智能中的识别技术</h1><br>
+				<img src="img4/7.jpg" class="xuxian">
+				<p>通过数字识别和人脸识别、自然语言处理等这些应用极为广泛的项目开发，深入介绍深度学习的概念，激活函数以及神经网络基础，对CNN、RNN进行原理方法和原理学习，卷积层和池化层，图像特征提取与识别，经典LeNet模型，LSTM，Encoder-Decoder Model等，同时引入自然语言处理方面的内容，包括分词、题干提取建模等，为不同方向的技术学习构建完整的技能知识图谱。</p><br>
+				<h1><span>人工智能高级：</span>从本阶段开始，我们的学习重点转向高级的模型优化算法上</h1><br>
+				<img src="img4/7.jpg" class="xuxian">
+				<p>在项目开发实现的基础上进行调优处理，通过学习过程的优化、数据预处理方法、超参数、学习率优化、Batch-Normalization等方法，实现开发算法的优化，完善提升神经网络的效率和质量，进一步理解算法实现与设计，实现开发工程师提升到算法专家之路。</p>
+			</div>
+			<div class="cont">
+				<br>
+				<h1><span>数据分析初级：</span>使用Python处理工作场景中的简单数据分析</h1><br>
+				<img src="img4/7.jpg" class="xuxian">
+				<p>基于CDBD（中国历代人物传记资料库）数据集开发课程案例，介绍数据分析的基本流程和方法，涉及的数据建模方法主要是聚类和决策树，学完之后能够使用Python处理工作场景中的简单数据分析。</p><br>
+				<h1><span>数据分析中级：</span>成为具有一定分析思维的数据分析师</h1><br>
+				<img src="img4/7.jpg" class="xuxian">
+				<p>基于真实企业数据库开发案例，重点介绍K-近邻、凝聚与分裂（层次聚类算法）、线性回归、朴素贝叶斯等数据建模方法，最终成为具有一定分析思维的数据分析师，满足就业需求。</p><br>
+				<h1><span>数据分析高级：</span>成长为一名高级数据分析师，并获得算法工程师的相关技能</h1><br>
+				<img src="img4/7.jpg" class="xuxian">
+				<p>基于前两个阶段学员学习数据开发的在线学习数据分析案例，通过完全贴近真实情境的数据分析工作，学会处理各种数据分析中的复杂问题，所使用的建模方法有支持向量机、DBSCAN、逻辑回归和反向传播神经网络，最终成长为一名高级数据分析师，并获得算法工程师的相关技能，能做出直接跟系统交互的仪表盘。</p>
+			</div>
+			<div class="cont">
+				<br>
+				<h1><span>Python初级：</span>数据可视化</h1><br>
+				<img src="img4/7.jpg" class="xuxian">
+				<p>在大量数据的情况下，如何让数据能够更直观，更高效的输出有用的信息就需要借助于数据可视化技术。通过项目实战完全掌握Matplotlib实现简单直观的数据可视化、Echarts实现更丰富的交互需求，在此基础上认识更多的数据可视化库并灵活运用。</p><br>
+				<h1><span>Python中级：</span>数据抓取与采集</h1><br>
+				<img src="img4/7.jpg" class="xuxian">
+				<p>互联网上存在着海量的数据信息，通过爬虫可以快速高效的获取这些数据。Scrapy爬虫框架是当前非常流行的一款爬虫框架。Scrapy使用Python作为开发语言，并且提供了非常丰富扩展功能，数量掌握Scrapy爬虫框架的使用能够实现高效获取互联网数据的目标。</p><br>
+				<h1><span>Python高级：</span>数据清洗与挖掘</h1><br>
+				<img src="img4/7.jpg" class="xuxian">
+				<p>本阶段主要完成数据处理方面的学习，利用Python实现数据清洗与存储相关技能。数据被正式应用于AI核心算法前，需要经过迁移、清洗、分片等多种转换处理，利用Python的numpy、pandas模块有效处理源数据中的空缺值、噪声数据、不一致数据、重复数据等。数据来源、存储环境是多样的，分别来自于JSON、CSV文件，MySQL、Redis、MongoDB数据库，HDFS文件系统等等。利用Python的json、csv、pymysql、redis、pymongo、pyhdfs模块很好地解决了数据存储问题。</p>
+			</div>
+		</div>
+		</div>
+		<div class="yinyong">
+			<div class="yinyongti">
+				<br><br>
+				<h1>高精尖的应用项目体系</h1><br /><br>
+			<h2>结合互联网应用场景，培养学员遇到问题->分析问题->解决问题的实际能力</h2><br>
+<h2>业务级解决方案+系统级解决方案</h2>
+			</div>
+			<div class="chepai">
+				<span class="ti">
+					1.
+				</span>
+				<span class="textti">
+					车牌号码识别
+				</span>
+				<img src="img4/9.jpg" class="huixian">
+				<p>车牌识别技术要求能够将运动中的汽车牌照从复杂背景中提取并识别出来，该项技术在车辆管理、电子收费等系统中广泛应用，图像识别是AI最广泛的应用之一。</p>
+			</div>
+			<div class="shenfen">
+				<span class="ti">
+					2.
+				</span>
+				<span class="textti">
+					身份证识别
+				</span>
+				<img src="img4/9.jpg" class="huixian">
+				<p>身份证识别应用于线上线下银行、交通出行检验等行业，是指使用图像识别技术对身份证信息自动提取，并对身份证信息按要素格式化输出信息。</p>
+			</div>
+			<div class="kefu">
+				<span class="ti">
+					4.
+				</span>
+				<span class="textti">
+					客服机器人
+				</span>
+				<img src="img4/9.jpg" class="huixian">
+				<p>采用自然语言处理技术，智能客服机器人的应用有着明显的优势。特别是为企业大大提升了服务效率，收集用户诉求和行为数据，为企业改进产品提供了有力支撑。</p>
+			</div>
+			<div class="renlian">
+				<span class="ti">
+					3.
+				</span>
+				<span class="textti">
+					人脸识别验证
+				</span>
+				<img src="img4/9.jpg" class="huixian">
+				<p>人脸识别技术的发展让“刷脸”变成现实，例如门禁刷脸系统、IPhoneX刷脸解锁、手机银行支付等等。人脸验证主要通过人脸识别定位、人脸属性识别、特征提取等等技术，保证其准确率和安全性。</p>
+			</div><br>
+			<input type="image" src="img4/8.jpg" / class="gengduo">
+		</div>
+		<div class="dingji">
+			<div class="dingjiti">
+			<br><br>
+			<h1>顶级专家团队打造的AI课程</h1><br /><br>
+			<h2>课工场联合北京大学</h2><br>
+		    </div>
+			<div class="xiaorui">
+				<br>
+				<span>课工场创始人&nbsp;&nbsp;&nbsp;北京大学教育学博士</span>
+				<img src="img4/9.jpg" class="huixian">
+				<p>课工场创始人，北京大学教育学博士，北京大学软件学院特约讲师，北京大学学习科学实验室特约顾问。作为北大青鸟Aptech联合创始人，历任学术总监，研究院院长，公司副总裁等核心岗位，拥有20多年IT职业教育产品管理和企业管理的经验。于2015年创办课工场，兼任总经理，旨在为大学生提供更可靠的IT就业教育及服务。</p>
+				<img src="img4/12.png" class="touxiang">
+				<span>&nbsp;&nbsp;&nbsp;肖睿</span>
+			</div>
+			<div class="shangjunjie">
+				<br>
+				<span>北京大学教育学院副院长&nbsp;&nbsp;&nbsp;博士生导师</span>
+				<img src="img4/9.jpg" class="huixian">
+				<p>北京大学教育学院副院长，博士生导师。2007年于香港中文大学获取哲学博士（教育学）学位，任香港中文大学教育学院客座副教授、中国教育技术协会教育游戏专业委员会理事长、全国计算机辅助教育（CBE）学会副理事长、中国人工智能学会理事、全球华人探究学习学会常务理事等学术职务。</p>
+				<img src="img4/9.png" class="touxiang">
+				<span>&nbsp;&nbsp;&nbsp;尚俊杰</span>
+			</div>
+			<div class="huangwenbin">
+				<br>
+				<span>北京大学副教授 &nbsp;&nbsp;&nbsp;德国慕尼黑理工大学博士</span>
+				<img src="img4/9.jpg" class="huixian">
+				<p>北京大学副教授，德国慕尼黑理工大学博士。拥有超过10年的数据挖掘、机器学习相关技术的学习经验及工作经验，主要从事数据科学工作，具备数学、计算机、管理等专业背景，曾赴德国慕尼黑工业大学合作多媒体技术项目。擅长数据分析策略制定与数据挖掘，曾与电信、电商、金融、文化、教育等企业合作数据科学相关项目。</p>
+				<img src="./img4/10.png" class="touxiang">
+				<span>&nbsp;&nbsp;&nbsp;黄文彬</span>
+			</div>
+			<div class="lige">
+				<br>
+				<span>北京大学博士 &nbsp;&nbsp;&nbsp;北京大学副教授</span>
+				<img src="img4/9.jpg" class="huixian">
+				<p>北京大学博士，北京大学副教授。拥有10年以上计算机语言及人工智能大数据方面的教学经验，曾赴斯坦福大学计算机系人工智能实验室从事深度学习方面的合作研究，任职访问副教授。李戈教授是国际上最早利用深度神经网络进行计算机程序分析与生成相关研究的研究者之一。结合自然语言分析技术，对程序语言的神经语言模型的研究取得了国际领先的研究成果。</p>
+				<img src="img4/7.png" class="touxiang">
+				<span>&nbsp;&nbsp;&nbsp;李哥</span>
+			</div>
+			<div class="Wayne">
+				<br>
+				<span>北京大学数学科学博士 &nbsp;&nbsp;&nbsp;北京大学研究员</span>
+				<img src="img4/9.jpg" class="huixian">
+				<p>北京大学数学科学博士，北京大学计算机研究所研究员，主导国内顶尖研发工作。15年北美IT行业工作经验，参与过金融、保险、医疗、零售等行业的众多大型项目开发和企业数据集成，曾任软件架构师、高级咨询顾问、大数据方案架构师等，负责大数据应用的方案设计。</p>
+				<img src="img4/8.png" class="touxiang">
+				<span>&nbsp;&nbsp;&nbsp;Wayne</span>
+			</div>
+			<div class="lina">
+				<br>
+				<span>研究院副院长 &nbsp;&nbsp;&nbsp;北京师范大学硕士</span>
+				<img src="img4/9.jpg" class="huixian">
+				<p>研究院副院长，北京师范大学硕士，从事计算机教育应用研究和实践11年，曾致力于教育领域的软件研发、计算机技术应用于教学的效果研究，并发表多篇研究论文。长期致力于基于岗位分析的逆向课程设计方法、教学设计方法、教学技巧、学习心理的研究，首次在培训行业中提出以学生为中心的教学设计理念。</p>
+				<img src="img4/11.png" class="touxiang">
+				<span>&nbsp;&nbsp;&nbsp;李娜</span>
+			</div>
+			<input type="image" src="img4/6.jpg" / class="gengduo">
+		</div>
+		<div class="hezuo">
+			<br><br>
+			<div class="hezuoti">
+			<br><br>
+			<h1>工作不是用来找的，而是用来选的！</h1>
+			</div>
+			<div id="hezuotab" class="hezuotab">
+				<ul>
+					<li class="active">合作企业</li>
+					<li>合作高校</li>
+				</ul>
+				<div class="cont" style="display: block;"><img src="img4/14.png" ></div>
+				<div class="cont"><img src="img4/13.png" ></div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<!-- 主体内容结束 -->
+		<!-- 尾部开始 -->
+		<div class="last">
+			<h1>我们知道，这一次学习对你非常重要！</h1><br>
+			<p>钱花了，还可以再挣；但是时间花了，就真的没有了！</p>
+			<p>路走错了，还可以返回路口再选；机会错过了，就真的没有了！</p>
+			<p>我们无法证明自己是最好的，我们只能做到让自己<span>更可靠！</span></p>
+			<p>我们不是职业教育，我们是<span>就业教育！</span></p>
+			<p>未来源于今天的选择！我们愿与你并肩前行！</p>
+			<br>
+			<input type="image" src="img4/6.jpg" / class="zixun">
+		</div>
+		<!-- Swiper JS -->
+		<script src="js4/swiper.min.js"></script>
+		
+		<!-- Initialize Swiper -->
+		<script>
+		  var swiper = new Swiper('.swiper-container', {
+		    pagination: {
+		      el: '.swiper-pagination',
+		      type: 'fraction',
+		    },
+		    navigation: {
+		      nextEl: '.swiper-button-next',
+		      prevEl: '.swiper-button-prev',
+		    },
+		  });
+		</script>
+		<script>
+			var oTab = document.getElementById('tab');
+			var aLis = oTab.getElementsByTagName('li');
+			var aConts = oTab.getElementsByClassName('cont');
+
+			for (var i = 0; i < aLis.length; i++) {
+				// i = 0 1 2
+				aLis[i].index = i; // 自定义属性 目的：获取当前的索引值,要知道当前选中的是第几个，通过该值，让对应的内容div显示
+				// aLis[0].index = 0; aLis[1].index = 1; aLis[2].index = 2;
+				aLis[i].onclick = function () {
+					// this 谁点击了， 谁就是this， this是指当前点击元素
+					for (var j = 0; j < aLis.length; j++) {
+						// 删除所有li的class
+						aLis[j].className = '';
+						// 让所有的div有隐藏掉
+						aConts[j].style.display = 'none';
+					};
+					//给当前点击项添加class
+					// aLis[this.index].className = 'active';
+					this.className = 'active'
+					// this.index 获取当前点击的下标
+					aConts[this.index].style.display = 'block';
+				};
+			};
+		</script>
+<script>
+			var oTab = document.getElementById('tab');
+			var aLis = oTab.getElementsByTagName('li');
+			var aConts = oTab.getElementsByClassName('cont');
+
+			for (var i = 0; i < aLis.length; i++) {
+				// i = 0 1 2
+				aLis[i].index = i; // 自定义属性 目的：获取当前的索引值,要知道当前选中的是第几个，通过该值，让对应的内容div显示
+				// aLis[0].index = 0; aLis[1].index = 1; aLis[2].index = 2;
+				aLis[i].onclick = function () {
+					// this 谁点击了， 谁就是this， this是指当前点击元素
+					for (var j = 0; j < aLis.length; j++) {
+						// 删除所有li的class
+						aLis[j].className = '';
+						// 让所有的div有隐藏掉
+						aConts[j].style.display = 'none';
+					};
+					//给当前点击项添加class
+					// aLis[this.index].className = 'active';
+					this.className = 'active'
+					// this.index 获取当前点击的下标
+					aConts[this.index].style.display = 'block';
+				};
+			};
+		</script>
+	</body>
+</html>
